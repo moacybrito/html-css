@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;     /* Deixa mais grudado*/
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;     /* tamanho minimo do corpo */
+    background-color: darkgray;      /* Cor de fundo */
+}
+
+header {
+    background-color: black;       /* Cor de fundo do titulo */
+    color: white;       /* Cor da letra do titulo */
+    text-align: center;      /* Titulo no centro */
+}
+
+header > h1 {
+    padding-top: 50px;      /* Afasta um pouco o titulo lá do topo */
+    font-variant: small-caps;      /* Muda fonte das letras */
+}
+
+header > p {
+    padding-bottom: 50px;    /* Da um espaço na parte debaixo do titulo igual lá em cima */
+}
+
+
+/* Serve para a parte de cima e para parte de baixo */
+header a, footer a {
+    color: white;         /* Deixa o "link" branco */
+    text-decoration: none;        /* Tira a linha (sublinhado do link) */
+    font-weight: bolder;       /* Deixa o link "negrito" mais grosso, uma especie de fonte */
+}
+
+
+/* serve para a cima e para baixo */
+header a:hover, footer a:hover {
+    text-decoration: underline;      /* Ao passar o mouse em cima deixar sublinhado, linha embaixo do texto/link */
+}
+
+section {
+    padding-top: 10vh;     /* 10% de espaço da altura */
+    padding-bottom: 10vh;     /* 10% de espaço de baixo */
+    line-height: 2em;      /* Espaçamento entre as linhas das letras */
+    padding-left: 30px;   /* Afasta pra dentro, afasta da esquerda */
+}
+
+section.normal {
+    background-color: white;    /* Cor de fundo do body (corpo) */
+    color: black;     /* Cor das letras (palavras) */
+}
+
+section.imagem {
+    background-color: rgba(27, 26, 26, 0.752);    /* Cor de fundo */
+    color: white;    /* Cor das letras */
+}
+
+section.imagem > p {
+    width: 400px;    /* Lagura da cor do fundo*/
+    background-color: rgba(0, 0, 0, 0.465);  /* Deixa especificamente fundo do texto cinza escuro*/
+}
+
+footer {
+    background-color: black;    /* Cor de fundo */
+    text-align: center;     /* Coloca texto no centro */
+    color: white;     /* Cores das letras */
+    padding: 10px;     /* Afasta dos dois lados, de cima e debaixo */
+}
