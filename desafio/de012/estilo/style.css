@@ -63,6 +63,10 @@ section {
     font-size: 3.5vh;  
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 section.normal {
     background-color: white;    /* Cor de fundo do body (corpo) */
     color: black;     /* Cor das letras (palavras) */
@@ -71,12 +75,26 @@ section.normal {
 section.imagem {
     background-color: rgba(27, 26, 26, 0.752);    /* Cor de fundo */
     color: white;    /* Cor das letras */
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.811);
+    background-attachment: fixed; /* Deixa imagem fixa no fundo */
 }
 
 section.imagem > p {
     display: inline-block;   
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.465);  /* Deixa especificamente fundo do texto cinza escuro*/
+    background-color: rgba(0, 0, 0, 0.514);  /* Deixa especificamente fundo do texto cinza escuro*/
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center; /* coloca a img em determinada posição */
+    background-size: cover; /* imagem cobri a tela toda independentemente da tela */
+}
+
+section#img02 {
+   background-image: url('../imagens/background002.jpg');
+   background-size: cover;
 }
 
 footer {
