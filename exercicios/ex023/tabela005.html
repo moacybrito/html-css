@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .amarelo {
+            background-color: yellow;
+        }
+
+        .vermelho{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+
+    <table>
+        <colgroup>
+            <col class="amarelo">
+            <col class="vermelho" span="2">
+            <col class="amarelo">
+            
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Claúdo</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>34</td>
+            <td>Veterinário</td>
+        </tr>
+        <tr>
+            <td>Moacy</td>
+            <td>M</td>
+            <td>26</td>
+            <td>Empreendedor</td>
+        </tr>
+        <tr>
+            <td>Ilcelia</td>
+            <td>F</td>
+            <td>29</td>
+            <td>Cabeleleira</td>
+        </tr>
+        <tr>
+            <td>Célio</td>
+            <td>M</td>
+            <td>32</td>
+            <td>Cantor</td>
+        </tr>
+    </table>
+</body>
+</html>
